@@ -9,7 +9,7 @@ jobs:
   windows:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       # Builds GUI + CLI with MSVC at /W4 and runs the self-test (includes a real loopback UDP test).
       - run: .\build.bat
         shell: cmd
